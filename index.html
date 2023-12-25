@@ -2,14 +2,37 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nina Tomasevic</title>
     <style>
-        body {
-            background-color: pink;
+        @font-face {
+            font-family: myFirstFont;
+            src: url(sansation_light.woff);
         }
 
-        h1 {
-            color: blue;
+        .header {
+            position: fixed;
+            background-color: pink;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            width: 100%;
+            height: 90px;
+            margin: 0 auto;
+            padding: 0px;
+            padding-left: 45px;
+            z-index: 2;
+            font-family: copperplate, monospace;
+            color: green;
+            font-size: 35px;
+            line-height: 1px;
+
+        }
+
+
+
+        body {
+            background-color: black;
         }
 
         img {
@@ -18,16 +41,72 @@
         }
 
         .glitch_positioning {
-            margin: 0 auto;
-            width: 75%;
+            border: 1px solid blue;
+            padding: 0px;
+            margin-left: 0px;
+            width: 700px;
             height: auto;
+            top: 53%;
+            right: 10%;
+            transform: translate(10%, -53%);
+            position: absolute;
+            z-index: 1;
+/*            filter: invert(100%);*/
+
+
+
+        }
+
+        .faces_positioning {
+            border: 1px solid blue;
+            padding: 0px;
+            margin-right: 0px;
+            width: 680px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-10%, -47%);
+
+            
+
+        }
+
+        @media screen and (max-width: 800px) {
+            .left, .main, .right {
+                width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            }
+
+            .header {
+                text-align: center;
+                padding: 0px;
+                margin: 0 auto;
+
+            }
+
+            h1 {
+                color: blue;
+            }
+
+
+
+
+
+
         }
 
     </style>
 </head>
 
 <body>
-    <img class="glitch_positioning" src="mainpage_images/glitch.gif" alt="glitch">
+    <div class="header"><h1>NINA TOMASEVIC</h1></div>
+
+
+    <div class="glitch_positioning">
+        <img class="gif" src="mainpage_images/glitch_transparent.gif" alt="Error message">
+    </div>
+
+    <div class="faces_positioning"><img class="faces" src="mainpage_images/glitching_faces.gif" alt="Glitching Faces"></div>
 
 
 
