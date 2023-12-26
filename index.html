@@ -64,7 +64,10 @@
             transform: translate(10%, -53%);
             position: absolute;
             z-index: 2;
-            filter: drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white);
+            filter: drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white);
+
+
+        
 
 /*            filter: invert(100%);*/
 
@@ -74,7 +77,7 @@
 
         }
 
-/*        .glow1 {
+        .glow1 {
             padding: 0px;
             margin-left: 0px;
             width: 600px;
@@ -84,12 +87,12 @@
             transform: translate(10%, -53%);
             position: absolute;
             z-index: 1;
-            filter: blur(30px) invert(100%);
-        }*/
+            filter: drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white);
+        }
 
-/*        .show {
+        .show {
             visibility: hidden;
-        }*/
+        }
 
 
 
@@ -133,20 +136,21 @@
                 top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            filter: invert(100%) brightness(200%) contrast(200%);
+            filter: invert(100%) drop-shadow(0px 0px 40px black) drop-shadow(0px 0px 40px black) drop-shadow(0px 0px 40px black);
+
             }
 
-/*            .glow1 {
+            .glow1 {
                 width: 540px;
                 top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            filter: blur(30px) invert(100%) brightness(0.10) contrast(200%) opacity(200%);
+            filter: drop-shadow(0px 10px 40px black) drop-shadow(0px 10px 40px black) drop-shadow(0px 0px 40px black);
             }
 
             .show {
             visibility: visible;
-        }*/
+        }
 
 
 
@@ -161,8 +165,24 @@
         }
 
         @media screen and (max-width: 400px) {
-            h1 {
+            .header {
                 color: blue;
+                font-size: 14;
+            }
+
+            .glitch_positioning {
+                transform: scale(.6);
+
+            }
+
+            .glow1 {
+                transform: scale(.6);
+
+            }
+
+            .faces_positioning {
+                transform: scale(.6);
+
             }
         }
 
@@ -180,15 +200,15 @@
     </div>
 
 
-<!--     <div class="show">
+    <div class="show">
 
     <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
     <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
+<!--     <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
     <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
     <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
-    <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
-    <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
-</div> -->
+    <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div> -->
+</div>
 
  
 
