@@ -30,13 +30,32 @@
             z-index: 2;
             font-family:'header_thin', copperplate, monospace;
             font-size: 25px;
-            line-height: 18px;
+            line-height: 70px;
         }
 
         h1 {
-            text-align: center;
+            text-align: left;
             margin: 0 auto;
         }
+
+        a {
+            color: #ff00cc;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #ff00cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #00ff33;
+            text-decoration: none;
+        }
+
+        
+
+
 
         body {
             background-color: black;
@@ -57,10 +76,9 @@
             transform: translate(10%, -53%);
             position: absolute;
             z-index: 2;
-            filter: drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white);
         }
 
-        .glow1 {
+        .shadow1 {
             padding: 0px;
             margin-left: 0px;
             width: 600px;
@@ -70,7 +88,6 @@
             transform: translate(10%, -53%);
             position: absolute;
             z-index: 1;
-            filter: drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white) drop-shadow(0px 0px 40px white);
         }
 
         .show {
@@ -92,10 +109,9 @@
 
         @media screen and (max-width: 1000px) {
             .header {
-                text-align: center;
                 padding: 0px;
                 margin: 0 auto;
-                color: #00ff33;
+/*                color: #00ff33;*/
                 height: 70px;
                 font-size: 17px;
                 line-height: 90px;
@@ -103,26 +119,46 @@
             }
 
             h1 {
+                text-align: center;
                 padding-top: 10px;
                 margin: 0 auto;
 /*                color: #00ff33;*/
             }
+
+            a {
+            color: #00ff33;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #00ff33;
+            text-decoration: none;
+        }
+
+
+        a:hover {
+            color: #ff00cc;
+            text-decoration: none;
+        }
+
+
 
             .glitch_positioning {
                 width: 540px;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                filter: invert(100%) drop-shadow(0px 0px 40px black) drop-shadow(0px 0px 40px black) drop-shadow(0px 0px 40px black);
+                filter: invert(100%) brightness(200%) contrast(200%);
+ 
 
             }
 
-            .glow1 {
+            .shadow1 {
                 width: 540px;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                filter: drop-shadow(0px 10px 40px black) drop-shadow(0px 10px 40px black) drop-shadow(0px 0px 40px black);
+
             }
 
             .show {
@@ -140,12 +176,14 @@
 
         @media screen and (max-width: 450px) {
             .header {
-                color: red;
+/*                color: #00ff33;*/
 /*                color: #00ff33;*/
                 font-size: 13px;
                 letter-spacing: 7px;
                 height: 85px;
             }
+
+
 
             .glitch_positioning {
                 margin: 0 auto;
@@ -154,7 +192,7 @@
                 width: 90%;
             }
 
-            .glow1 {
+            .shadow1 {
                 margin: 0 auto;
                 position: fixed;
                 max-width: 90%;
@@ -191,36 +229,34 @@
             }
         }
 
+
+
     </style>
 </head>
 
-<body><a href="index.html">
-    <div class="header"><h1>NINA TOMASEVIC</h1>
-    </div></a>
-    
+<body>
 
+    <div class="header">
+
+        
+            <h1><a href="index.html">NINA TOMASEVIC</a></h1>
+        
+
+    </div>
 
     <div class="glitch_positioning">
         <img src="mainpage_images/glitch_transparent.gif" alt="Error message">
     </div>
 
-
     <div class="show">
+        <div class="shadow1">
+            <img src="mainpage_images/glitch_shadow.png" alt="Error message shadow">
+        </div>
+    </div>
 
-    <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
-    <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
-<!--     <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
-    <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
-    <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div>
-    <div class="glow1"><img src="mainpage_images/glitch_transparent.gif" alt="Error message glow"></div> -->
-</div>
-
- 
-
-
-    <div class="faces_positioning"><img class="faces" src="mainpage_images/glitching_faces.gif" alt="Glitching Faces"></div>
-
-
+    <div class="faces_positioning">
+        <img class="faces" src="mainpage_images/glitching_faces.gif" alt="Glitching Faces">
+    </div>
 
 </body>
 
